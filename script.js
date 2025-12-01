@@ -69,7 +69,11 @@ function atualizarGrafico(){
     grafico = new Chart(ctx,{
         type:'doughnut',
         data:{ labels:['Aberto','Em andamento','Resolvido'], datasets:[{data:dados, backgroundColor:['#dc3545','#ffc107','#28a745']}]},
-        options:{ plugins:{ legend:{ labels:{ color:'#e0e0e0', font:{size:14} } } }, animation:{ animateScale:true, animateRotate:true }}
+        options:{ 
+            maintainAspectRatio: false,
+            plugins:{ legend:{ labels:{ color:'#e0e0e0', font:{size:14} } } }, 
+            animation:{ animateScale:true, animateRotate:true }
+        }
     });
 }
 
