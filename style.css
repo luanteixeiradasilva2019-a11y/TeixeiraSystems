@@ -84,6 +84,14 @@ nav button:hover {
     font-weight:bold;
 }
 
+/* Canvas do gráfico */
+#graficoStatus {
+    max-width: 500px;
+    max-height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
 /* Registrar */
 .form-registro {
     display:flex;
